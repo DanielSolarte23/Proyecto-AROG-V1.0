@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Administrador</title>
+    <link rel="stylesheet" href="css/inicioadmins.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+<body>
+<div class="arriba">
+
+</div>
+<header>
+    <section class="imagen">
+        <img src="img/logoArogNuevo.png" alt="">
+    </section>
+    <section class="texto">
+        <h3>Asociacion de <br>recicladores de oficio</h3>
+        <h1>GOLEROS</h1>
+    </section>
+    
+</header>
+
+
+<main>
+    <section class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </section>
+    <section class="barra-lateral " >
+        <article>
+            <section class="nombre-pagina">
+                <ion-icon id="cloud" name="caret-back-circle-outline"></ion-icon>
+            </section>
+        </article>
+    
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    
+                    <a id="Perfil" href="#">
+                        <ion-icon name="map-outline"></ion-icon>
+                        <span>Geolocalizacion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Gestion de rutas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                        <span>Asignacion de tareas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <span>Gestion de usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Gestion de datos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="cash-outline"></ion-icon>
+                        <span>Pagos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                        <span>Estadisticas y metricas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="folder-open-outline"></ion-icon>
+                        <span>Historial de registro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="document-attach-outline"></ion-icon>
+                        <span>Informes y certificados</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="images-outline"></ion-icon>
+                        <span>Registro fotografico</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <section>
+            <article class="linea"></article>
+        <section class="modo-oscuro">
+            <article class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>modo oscuro</span>
+            </article>
+            <section class="switch">
+                <article class="base">
+                    <article class="circulo">
+
+                    </article>
+                </article>
+            </section>
+        </section>
+        <section class="usuario">
+            <img src="img/fotos-de-perfil-aesthetic-920x1024.jpg" alt="">
+            <article class="info-usuario">
+                <section class="nombre-email">
+                    <span class="nombre">Joshua Escobar</span>
+                    <span class="email">Jhosuaescobar@gmail.com</span>
+                </section>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </article>
+        </section>
+        </section>
+    </section>
+    <!-- METER EL CONTENIDO DENTRO DE ESTE SECTION  -->
+    <section id="contenido-principal">
+        <main class="contenido_admi">
+            <section class="perfil">
+                <img  class="foto"  src="img/perfil.png" alt="">
+                <h1 class="bienvenido">Bienvenido Joshua Escobar</h1>  
+            </section>
+            <section class="datos-perfil">
+                <section class="campo1">
+                    <article class="nombre">
+                        
+                        <label for="nombre">Nombre</label>
+                        <article class="icono-flex">
+                            <input id="nombre" class="input" type="text" placeholder="Joshua"><i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                        <label for="apellido">Apellido</label>
+                        <article class="icono icono-flex">
+                            <input id="apellido" class="input" type="text" placeholder="Escobar Gaviria"><i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                    </article>
+                </section>
+
+                <section class="campo2">
+                    <article class="telefono">
+
+                        <label for="telefono">Telefono</label>
+                        <article class="Icono icono-flex">
+                            <input id="telefono" class="input" type="text" placeholder="315566584">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                       
+                        <label for="direccion">Direccion</label>
+                        <article class="flex icono-flex">
+                            <input id="direccion" class="input"  type="text" placeholder="Calle 75 #24-25"><i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+      
+    </section>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</main>
+</body>
+</html>
