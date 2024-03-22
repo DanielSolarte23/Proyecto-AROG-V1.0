@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --color-principal: rgb(24, 34, 24);
+    --color-texto: #A3BA1F;
+    --color-gris: #D9D9D9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca";
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-principal);
+}
+
+.main{
+    display: flex;
+}
+.nombre {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombre img{
+    width: 20%;
+}
+.nombre .nombres{
+    color: white;
+    font-size: 30px;
+}
+.nombre .nombres h6{
+    font-weight: 200;
+}
+.nombre .nombres h2{
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+.inicio{
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.inicio h5{
+    font-size: 25px;
+}
+.inicio .inputs{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+}
+.inicio .inputs input {
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: var(--color-gris);
+}
+.inicio .inputs input:focus{
+    outline: none;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: gray;
+    border: none;
+}
+footer button a{
+    color: white;
+    font-size: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer .gmail{
+    background-color: white;
+    border: solid 0.1px;
+    width: 30%;
+}
+footer .tiene{
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
