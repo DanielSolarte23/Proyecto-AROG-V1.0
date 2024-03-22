@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --color-principal: rgb(24, 34, 24);
+    --color-texto: #A3BA1F;
+    --color-gris: #D9D9D9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca";
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-principal);
+}
+.header{
+    background-color: var(--color-principal);
+    height: 7vh;
+}
+.nav{
+    height: 15vh;
+    background-color: var(--color-gris);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 50px;
+    align-items: center;
+}
+.nav .nombre{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 15px;
+}
+.nav .nombre .nombres{
+    display: block;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.nav .nombre .nombres h6{
+    margin-bottom: -7px;
+}
+.nav img{
+    height: 90px;
+}
+.nav .lista{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+.nav .lista .linea{
+    width: 1px;
+    background-color: gray;
+}
+.nav .lista li a{
+    text-decoration: none;
+    color: black;    
+}
+.main{
+    width: 100%;
+    height: 78vh;
+    display: flex;
+}
+.main .titulo{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+}
+.main .titulo h1{
+    color: var(--color-texto);
+    font-weight: 300;
+}
+.main .imagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.main .imagen img{
+    width: 100%;
+    height: 99%;
+}
+
+.main .imagen .color{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-principal);
+    background: linear-gradient(to left, transparent, rgb(24, 34, 24));
+    padding: 5px 10px;
+    width: 100%;
+    height: 100%;
+}
