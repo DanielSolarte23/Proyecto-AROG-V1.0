@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Administrador</title>
-    <link rel="stylesheet" href="css/inicioadmins.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <title>Mi Aplicación Web</title>
+    <link rel="stylesheet" href="css/registroincidentes.css">
 </head>
 <body>
 <div class="arriba">
@@ -38,55 +37,56 @@
         <nav class="navegacion">
             <ul>
                 <li>
+                    
                     <a id="Perfil" href="#">
                         <ion-icon name="map-outline"></ion-icon>
                         <span>Geolocalizacion</span>
                     </a>
                 </li>
                 <li>
-                    <a href="GestionRutasA.html">
+                    <a href="#">
                         <ion-icon name="location-outline"></ion-icon>
                         <span>Gestion de rutas</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <ion-icon name="clipboard-outline"></ion-icon>
                         <span>Asignacion de tareas</span>
                     </a>
                 </li>
                 <li>
-                    <a href="GestionusuA.html">
+                    <a href="#">
                         <ion-icon name="people-outline"></ion-icon>
                         <span>Gestion de usuarios</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <ion-icon name="document-text-outline"></ion-icon>
                         <span>Gestion de datos</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pagosA.html">
+                    <a href="#">
                         <ion-icon name="cash-outline"></ion-icon>
                         <span>Pagos</span>
                     </a>
                 </li>
                 <li>
-                    <a href="EstadisticasA.html">
+                    <a href="#">
                         <ion-icon name="stats-chart-outline"></ion-icon>
                         <span>Estadisticas y metricas</span>
                     </a>
                 </li>
                 <li>
-                    <a href="registrorecoleccionF.html">
+                    <a href="#">
                         <ion-icon name="folder-open-outline"></ion-icon>
                         <span>Historial de registro</span>
                     </a>
                 </li>
                 <li>
-                    <a href="GeneracertifA.html">
+                    <a href="#">
                         <ion-icon name="document-attach-outline"></ion-icon>
                         <span>Informes y certificados</span>
                     </a>
@@ -116,7 +116,6 @@
             </section>
         </section>
         <section class="usuario">
-            <a href="inicioadmins.html">
             <img src="img/fotos-de-perfil-aesthetic-920x1024.jpg" alt="">
             <article class="info-usuario">
                 <section class="nombre-email">
@@ -125,51 +124,43 @@
                 </section>
                 <ion-icon name="ellipsis-vertical-outline"></ion-icon>
             </article>
-        </a>
         </section>
         </section>
     </section>
     <!-- METER EL CONTENIDO DENTRO DE ESTE SECTION  -->
     <section id="contenido-principal">
-        <main class="contenido_admi">
-            <section class="perfil">
-                <img  class="foto"  src="img/perfil.png" alt="">
-                <h1 class="bienvenido">Bienvenido Joshua Escobar</h1>  
-            </section>
-            <section class="datos-perfil">
-                <section class="campo1">
-                    <article class="nombre">
-                        
-                        <label for="nombre">Nombre</label>
-                        <article class="icono-flex">
-                            <input id="nombre" class="input" type="text" placeholder="Joshua"><i class="fa-regular fa-pen-to-square"></i>
-                        </article>
-                        <label for="apellido">Apellido</label>
-                        <article class="icono icono-flex">
-                            <input id="apellido" class="input" type="text" placeholder="Escobar Gaviria"><i class="fa-regular fa-pen-to-square"></i>
-                        </article>
-                    </article>
-                </section>
-
-                <section class="campo2">
-                    <article class="telefono">
-
-                        <label for="telefono">Telefono</label>
-                        <article class="Icono icono-flex">
-                            <input id="telefono" class="input" type="text" placeholder="315566584">
-                            <i class="fa-regular fa-pen-to-square"></i>
-                        </article>
-                       
-                        <label for="direccion">Direccion</label>
-                        <article class="flex icono-flex">
-                            <input id="direccion" class="input"  type="text" placeholder="Calle 75 #24-25"><i class="fa-regular fa-pen-to-square"></i>
-                        </article>
-                    </article>
-                </section>
-            </section>
+        <main class="main">
+            <form action="#" method="post">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+        
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+        
+                <label for="tipo_incidente">Tipo de Incidente:</label>
+                <select id="tipo_incidente" name="tipo_incidente" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Accidente">1</option>
+                    <option value="Robo">2</option>
+                    <option value="Daño">3</option>
+                    <option value="Otro">4</option>
+                </select>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+        
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+        
+                <input type="submit" value="Enviar">
+            </form>
         </main>
-
-      
     </section>
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
