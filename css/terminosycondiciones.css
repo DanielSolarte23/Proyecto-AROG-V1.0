@@ -59,7 +59,9 @@ article{
    justify-content: flex-end;
     gap: 10px;
 }
-
+.botones a{
+    text-decoration: none;
+}
 .botones button{
     width: 150px;
     height:30px;
