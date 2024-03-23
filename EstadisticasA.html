@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Aplicación Web</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+  </head>
+
+  <body>
+    <div class="arriba"></div>
+    <header>
+      <section class="imagen">
+        <img src="img/logoArogNuevo.png" alt="" />
+      </section>
+      <section class="texto">
+        <h3>Asociacion de <br />recicladores de oficio</h3>
+        <h1>GOLEROS</h1>
+      </section>
+    </header>
+
+    <main>
+      <section class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+      </section>
+      <section class="barra-lateral">
+        <article>
+          <section class="nombre-pagina">
+            <ion-icon id="cloud" name="caret-back-circle-outline"></ion-icon>
+          </section>
+        </article>
+
+        <nav class="navegacion">
+          <ul>
+            <li>
+              <a id="Perfil" href="#">
+                <ion-icon name="map-outline"></ion-icon>
+                <span>Geolocalizacion</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Gestion de rutas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="clipboard-outline"></ion-icon>
+                <span>Asignacion de tareas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="people-outline"></ion-icon>
+                <span>Gestion de usuarios</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <span>Gestion de datos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="cash-outline"></ion-icon>
+                <span>Pagos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="stats-chart-outline"></ion-icon>
+                <span>Estadisticas y metricas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="folder-open-outline"></ion-icon>
+                <span>Historial de registro</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="document-attach-outline"></ion-icon>
+                <span>Informes y certificados</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="images-outline"></ion-icon>
+                <span>Registro fotografico</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section>
+          <article class="linea"></article>
+          <section class="modo-oscuro">
+            <article class="info">
+              <ion-icon name="moon-outline"></ion-icon>
+              <span>modo oscuro</span>
+            </article>
+            <section class="switch">
+              <article class="base">
+                <article class="circulo"></article>
+              </article>
+            </section>
+          </section>
+          <section class="usuario">
+            <img src="img/fotos-de-perfil-aesthetic-920x1024.jpg" alt="" />
+            <article class="info-usuario">
+              <section class="nombre-email">
+                <span class="nombre">Joshua Escobar</span>
+                <span class="email">Jhosuaescobar@gmail.com</span>
+              </section>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- Mi seccion, estadisticas y metricas, admi  -->
+      <section id="contenido-principal">
+        <!-- main es el cuerpo -->
+        <main class="principal">
+          <main class="principal2">
+            <!-- article del contenido a la isquierda -->
+            <article class="semanas">
+              <!-- encabezado del article de la isquierda -->
+              <header class="usuarios">
+                <article class="usuarios-cien">
+                  <p class="titulo-usuarios">Usuarios</p>
+                  <h1 class="cien">100</h1>
+                </article>
+                <img
+                  class="foto-usuarios"
+                  src="img/foto-usuarios.png"  alt="foto usuario"
+                />
+              </header>
+              <!--    botones -->
+              <article class="botones-semanas">
+                <button class="boton">Semana 1</button>
+                <button class="boton">Semana 2</button>
+                <button class="boton">Semana 3</button>
+                <button class="boton">Semana 4</button>
+              </article>                           
+            </article>
+            <!-- seccion de contenido a la derecha -->
+            <section class="seccion-derecha">
+              <article class="formato-operativo">
+                <!-- formatos operativos -->
+                <section class="contenedor-formato"> 
+                  <p class="formato">Estadistica de Formato Operativo</p>
+                  <i class="fa-solid fa-repeat"></i>
+                </section>
+                <section>
+                  <section class="contenedor-desplazar">
+                    <section class="desplazar"><i class="fa-solid fa-angles-left"></i><p>Atrás</p></section>
+                    <section class="desplazar"><p>Siguiente</p><i class="fa-solid fa-angles-right"></i></section>
+                  </section>
+                  <article class="botones-dias">
+                    <button class="dia">dia 1</button>
+                    <button class="dia">dia 2</button>
+                    <button class="dia">dia 3</button>
+                    <button class="dia">dia 4</button>
+                  </article>
+                </section>  
+              </article>
+              <article class="informacion">
+                <!--  texto informativo -->
+                <p>
+                  Formato util para obtener informacion sobre la recoleccion de
+                  materia reciclable. Permite realizar analisis estadisticos
+                  para mejorar la gestion de la recoleccion.
+                </p>
+                <br />
+                <p>informacion adicional:</p>
+                <ul>
+                  <li>
+                    La imagen muestra un grafico circular que representa la
+                    cantidad de material recolectado por origen
+                  </li>
+                  <li>
+                    La imagen tambien muestra un grafico de lineas que represent
+                    la cantidad de material recolectado por dia
+                  </li>
+                </ul>
+              </article>
+            </section>
+          </main>
+          <!-- seccion de la parte de abajo; calendario y grafica de estadisticas -->
+          <section class="contenido-abajo">
+            <!-- article calendario lado isquierdo -->
+            <article class="calendario">
+              <img
+                class="imagen-calendario"
+                src="img/imagen-calendario.png"
+                alt="calendario"
+              />
+            </article>
+            <!-- article lado derecho grafica -->
+            <article class="grafica">
+              <!-- imagen  de grafica -->
+              <img
+                class="imagen-grafica"
+                src="img/imagen-grafica.png"
+                alt="Grafica"
+              />
+            </article>
+          </section>
+        </main>
+      </section>
+      <script src="js/script.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+    </main>
+  </body>
+</html>

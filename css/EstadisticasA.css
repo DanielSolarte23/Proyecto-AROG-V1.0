@@ -453,113 +453,175 @@ a:hover {
   }
 }
 
-/* contenido de la pagina  */
-
-.contenido_admi {
+/* ---------estadisticas y metricas--------- */
+.principal {
   width: 100%;
   height: 100%;
   display: flex;
+  /* posiciona todo el contenido en vertical */
   flex-direction: column;
 }
 
-/* configuracion de la pagina */
-.perfil {
+.principal2 {
   width: 100%;
-  height: 60%;
+  height: 50%;
+  margin-bottom: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.foto {
-  width: 15%;
-}
-
-.bienvenido {
-  margin-top: 3%;
-  font-size: 30px;
-}
-
-.datos-perfil {
-  width: 100%;
-  height: 40%;
-  display: flex;
-
-
-}
-
-/* contendio de los datos personales  */
-.campo1 {
-  width: 50%;
+.semanas {
+  width: 25%;
   height: 100%;
+  margin: 6px 10px;
+  background-color: #ffffff;
+}
+/* es el encabezado donde dice 100 usuarios */
+.usuarios{
+  width: 95%;
+  height: 15%;
+  margin: 7px 8px;
+  box-shadow: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
 
 }
 
-.campo1 .nombre {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-
+.usuarios-cien{
+  margin: 9px 8px;
 }
-
-.campo1 input {
-  width: 70%;
-  height: 50px;
-  margin-bottom: 20px;
-  border: none;
-  padding: 10px;
+.titulo-usuarios{
+  font-size: 15px; 
 }
-
-.input {
-  width: 100%;
-}
-
-
-
-.campo2 {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  border: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.campo2 .telefono {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.campo2 input {
-  width: 70%;
-  height: 50px;
-  margin-bottom: 20px;
-  border: none;
-  padding: 10px;
-}
-
-/* icono de editar  */
-.icono-flex {
-  display: flex;
-  width: 100%;
-  margin: 15px;
-  justify-content: center;
+.cien{
   font-size: 25px;
-  align-items: center;
-  gap: 20px;
 }
 
-.icono-flex i {
+/* foto usuarios */
+.foto-usuarios{
+  width: 30%;
+  height: 70%;
+  left: -100%; 
+}
+ /* es el contenedor que tendra a los botones */
+ .botones-semanas{
+  width: 98%;
+  height: 80%;
+  margin: 4px 4px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+ }
+
+.boton{
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.seccion-derecha {
+  width: 75%;
+  height: 100%;
+  margin: 6px 10px;
+}
+/* contenido superior derecha estadistica de formato */
+.formato-operativo {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 7px;
+  max-width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px 15px;
+}
+.contenedor-formato {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formato{
+  font-size: 18px;
+}
+.informacion {
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  margin-bottom: 7px;
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+.fa-solid .fa-repeat{
+  align-self: flex-end;
+}
+.contenedor-desplazar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.desplazar {
+  display: flex;
+  align-items: center;
+}
+.botones-dias {
+  width:100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.dia {
+  width: 100%;
+  height: 25  px;
+}
+ul{
+  margin-top: none;
+  margin-left: 20px;
+}
+
+.contenido-abajo {
+  width: 100%;
+  height: 46%;
+  margin-top: 10px;
   margin-bottom: 15px;
+  display: flex;
+}
+
+.calendario{
+  width: 25%;
+  height: 90%;
+  margin: 6px 10px;
+  max-width: 100%;
+ 
+  
+  background-color: #e9bbe8;
+}
+
+/* imagen calendario */
+.imagen-calendario{
+  width: 100%;
+  height:100%;
+  background-size: contain;
+}
+
+.grafica{
+  width: 75%;
+  height: 90%;
+  margin: 6px 10px;
+}
+
+.imagen-grafica{
+  width: 100%;
+  height:100%;
+  max-width: 100%;
+  background-size: contain;
 }
