@@ -6,21 +6,27 @@ const circulo = document.querySelector(".circulo");
 const menu = document.querySelector('.menu');
 const section = document.querySelector('section');
 
-menu.addEventListener('click',()=>{
+menu.addEventListener('click', () => {
     barraLateral.classList.toggle('max-barra-lateral');
-    if(barraLateral.classList.contains('max-barra-lateral')){
+    if (barraLateral.classList.contains('max-barra-lateral')) {
         menu.children[0].style.display = "none";
         menu.children[1].style.display = "block";
-    }else{
+    } else {
         menu.children[0].style.display = "block";
         menu.children[1].style.display = "none";
     }
-    if(window.innerWidth<=320){
+    if (window.innerWidth <= 320) {
+        barraLateral.classList.remove("mini-barra-lateral");
+        section.classList.remove("min-section");
+        spans.forEach((span) => {
+            span.classList.remove("oculto")
+        });
+    } else {
         barraLateral.classList.add("mini-barra-lateral");
         section.classList.add("min-section");
-        span.forEach((span)=>{
+        spans.forEach((span) => {
             span.classList.add("oculto")
-        })
+        });
     }
 });
 
@@ -29,8 +35,6 @@ palanca.addEventListener("click",()=>{
     body.classList.toggle("dark-mode")
     circulo.classList.toggle("prendido")
 })
-
-
 cloud.addEventListener('click',()=>{
     barraLateral.classList.toggle("mini-barra-lateral");
     section.classList.toggle('min-section')

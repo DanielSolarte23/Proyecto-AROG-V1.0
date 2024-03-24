@@ -13,6 +13,10 @@
   --color-circulo: rgb(241, 241, 241);
   --color-primario: #182218;
   --color-barra-arog: #d9d9d9;
+  --color-texto-header: rgb(0,0,0);
+  --color-contenido: rgb(255,255,255);
+  --color-inputs: rgb(137, 137, 137);
+  --color-fondo-contenido: #ccc;
 }
 
 .dark-mode {
@@ -26,8 +30,12 @@
   --color-linea: rgb(71, 70, 78);
   --color-switch-base: rgb(39, 205, 64);
   --color-circulo: rgb(255, 255, 255);
-  --color-primario: #182218;
-  --color-barra-arog: #d9d9d9;
+  --color-primario: #000000;
+  --color-barra-arog: rgb(44, 45, 49);
+  --color-texto-header: rgb(179, 179, 179);
+  --color-contenido: rgb(44, 45, 49);
+  --color-inputs: rgb(206, 206, 206);
+  --color-fondo-contenido: #4e4e4e;
 }
 
 body {
@@ -54,12 +62,13 @@ body {
 
 header {
   background-color: var(--color-barra-arog);
-  height: 10vh;
+  height: 12vh;
   display: flex;
   box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 }
 
 header>.imagen>img {
@@ -73,6 +82,7 @@ header .texto {
   justify-content: center;
   align-items: center;
   margin-left: 20px;
+  color: var(--color-texto-header);
 }
 
 header .texto h3 {
@@ -80,33 +90,35 @@ header .texto h3 {
   padding: 0;
   font-size: 14px;
   margin-top: 20px;
+  font-weight: 300;
 }
 
 header .texto h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 15px;
   margin-top: -8px;
+  font-weight: 300;
 }
 
 .arriba {
-  height: 2vh;
-  background-color: #182218;
+  height: 5vh;
+  background-color: var(--color-primario);
 }
 
 main {
   flex: 1;
   display: flex;
-  height: 88vh;
+  height: 80vh;
   width: 100vw;
 }
 
 #contenido-principal {
   flex: 1;
   overflow-y: auto;
-  background-color: #ccc;
-  border-left: solid 10px rgb(24, 34, 24);
-  border-top: solid 10px #182218;
+  background-color: var(--color-fondo-contenido);
+  border-left: solid 10px var(--color-primario);
+  border-top: solid 10px var(--color-primario);
 }
 
 #contenido-principal .rol {
@@ -176,7 +188,7 @@ a:hover {
 .barra-lateral {
   flex-direction: column;
   display: flex;
-  width: 250px;
+  width: 80px;
   height: 100%;
   overflow: hidden;
   padding: 20px 15px;
@@ -190,7 +202,7 @@ a:hover {
 }
 
 .mini-barra-lateral {
-  width: 80px;
+  width: 250px;
 }
 
 .barra-lateral span {
@@ -201,10 +213,10 @@ a:hover {
   transition: opacity 0.5s ease, width 0.5s ease;
 }
 
-.barra-lateral span.oculto {
+/* .mini-barra-lateral span.oculto {
   opacity: 0;
   width: 0;
-}
+} */
 
 .barra-lateral .nombre-pagina {
   width: 100%;
@@ -237,6 +249,7 @@ a:hover {
   font-size: 25px;
   cursor: pointer;
 }
+
 
 .barra-lateral .nombre-pagina span {
   font-size: 20px;
@@ -284,20 +297,29 @@ a:hover {
   align-items: center;
   text-decoration: none;
   border-radius: 10px;
-
   color: var(--color-texto-menu);
+  padding: 12px;
+
 }
 
 .barra-lateral .navegacion a:hover {
   background-color: var(--color-menu-hover);
   color: var(--color-menu-hover-texto);
-  border-radius: 0;
+  border-radius: 10;
 }
 
 .barra-lateral .navegacion ion-icon {
   min-width: 50px;
   font-size: 20px;
 }
+.barra-lateral .navegacion i{
+  min-width: 50px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: -15px;
+}
+
 
 /* -----------------> Linea */
 
@@ -372,6 +394,7 @@ a:hover {
   width: 100%;
   display: flex;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .barra-lateral .usuario img {
@@ -457,7 +480,7 @@ a:hover {
 
 .contenido_admi {
   width: 100%;
-  height: 100%;
+  height: 98%;
   display: flex;
   flex-direction: column;
 }
@@ -479,6 +502,8 @@ a:hover {
 .bienvenido {
   margin-top: 3%;
   font-size: 30px;
+  color: var(--color-texto-header);
+  transition: 0.5s;
 }
 
 .datos-perfil {
@@ -519,8 +544,15 @@ a:hover {
 
 .input {
   width: 100%;
+  font-size: 20px;
+  background-color: var(--color-barra-lateral);
+  transition: 0.5s;
 }
-
+label{
+  color: var(--color-texto-header);
+  font-size: 20px;
+  transition: 0.5s;
+}
 
 
 .campo2 {
@@ -558,6 +590,8 @@ a:hover {
   font-size: 25px;
   align-items: center;
   gap: 20px;
+  color: var(--color-texto-header);
+  transition: 0.5s;
 }
 
 .icono-flex i {
