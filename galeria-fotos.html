@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de rutas</title>
+    <title>Galeria de Fotos</title>
     <link rel="shortcut icon" href="img/logoArogNuevo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/gestionRutasA.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
 <div class="arriba">
@@ -93,7 +99,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="galeria-fotos.html">
+                    <a href="#">
                         <i class="fa-solid fa-images"></i>
                         <span>Registro fotografico</span>
                     </a>
@@ -117,7 +123,6 @@
             </section>
         </section>
         <section class="usuario">
-            <a class="usuario" href="inicioadmins.html">
             <img src="img/fotos-de-perfil-aesthetic-920x1024.jpg" alt="">
             <article class="info-usuario">
                 <section class="nombre-email">
@@ -126,37 +131,37 @@
                 </section>
                 <ion-icon name="ellipsis-vertical-outline"></ion-icon>
             </article>
-        </a>
         </section>
         </section>
     </section>
     <!-- METER EL CONTENIDO DENTRO DE ESTE SECTION  -->
-    <section id="contenido-principal" class="contenedor">
-            <section class="im">
-                <img src="https://www.elsoldetlaxcala.com.mx/doble-via/vtlv25-google-maps.jpeg/ALTERNATES/LANDSCAPE_768/Google%20maps.jpeg" alt="" width="100%" height="100%" >
-            </section>
-            <section class="enc">   
-                <form>
-                    <button class="input" type="text"type="submit">puntos de ruta</button>
-                    <button class="input" type="text"type="submit">Rutas</button>
-                </form>
-            </section>
-            
-        <section class="filas">
-            <section class="primera">
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>
-                <h1 class="textoo">Aida Lucia</h1>
-            </section>    
-            <section class="segunda">
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>    
-                <h1 class="textoo">Barrio Bolivar</h1>
-            </section>
-            <section class="tercera">
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>    
-                <h1 class="textoo">La Esmeralda</h1>
-            </section>    
-        </section>
+    <section id="contenido-principal">
+        <main class="mains">
+            <header class="main1">
+                <button class="añadirr">Añadir Fotos +</button>
+                <button class="borrar">Borrar</button>
+            </header>
+            <article class="article2">
+                <div class="full-img" id="fullImgBox">
+                    <i class='bx bx-left-arrow-alt' id="left-btn"></i>
+                    <img src="/391b4e6a-8fdd-42ef-a4b3-e8d65c1e884b.jpeg" alt="" id="img-element">
+                    <i class='bx bx-right-arrow-alt' id="right-btn"></i>
+                    <span id="closeImg">X</span>
+                </div>
+                <div class="img-gallery">
+                    <img src="galeria img/176503665_1545934722411361_179350495817363731_n.jpg" alt="" class="img">
+                    <img src="galeria img/176859619_1545934775744689_1409829263485232102_n.jpg" alt="" class="img">
+                    <img src="galeria img/176913425_1545581845779982_246977211774082684_n.jpg" alt="" class="img">
+                    <img src="galeria img/246011949_1679266449078187_739828742025551436_n.jpg" alt="" class="img">
+                    <img src="galeria img/271902156_1738080376530127_7522184709318473222_n.jpg" alt="" class="img">
+                    <img src="galeria img/286266197_1839809253023905_5938653342049883707_n.jpg" alt="" class="img">
+                </div>
+            </article>
+
+
+        </main>
     </section>
+    <script src="js/script-galeria.js"></script>
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

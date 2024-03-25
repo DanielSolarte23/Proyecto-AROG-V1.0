@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de rutas</title>
+    <title>Registro de incidentes</title>
     <link rel="shortcut icon" href="img/logoArogNuevo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/gestionRutasA.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/asigTareas.css">
 </head>
 <body>
 <div class="arriba">
@@ -117,7 +122,6 @@
             </section>
         </section>
         <section class="usuario">
-            <a class="usuario" href="inicioadmins.html">
             <img src="img/fotos-de-perfil-aesthetic-920x1024.jpg" alt="">
             <article class="info-usuario">
                 <section class="nombre-email">
@@ -126,36 +130,93 @@
                 </section>
                 <ion-icon name="ellipsis-vertical-outline"></ion-icon>
             </article>
-        </a>
         </section>
         </section>
     </section>
     <!-- METER EL CONTENIDO DENTRO DE ESTE SECTION  -->
-    <section id="contenido-principal" class="contenedor">
-            <section class="im">
-                <img src="https://www.elsoldetlaxcala.com.mx/doble-via/vtlv25-google-maps.jpeg/ALTERNATES/LANDSCAPE_768/Google%20maps.jpeg" alt="" width="100%" height="100%" >
+    <section id="contenido-principal">
+        <main class="main1">
+            <article class="article1">
+                <button class="button1">+</button>             
+                <h1>Ordernar por: <input class="inputnombre" type="Nombre"></h1>
+                
+            <article class="article2">
+                <table>
+                    <tr class="tr1">
+                        <td class="celda1"></td>
+                        <td class="celda2">Empleado</td>
+                        <td class="celda3">Estado</td>
+                        <td class="celda4">Etiqueta</td>
+                    </tr>
+                </table>
+                <table>
+                    <div class="linea1"></div>
+                    <tr>
+                        <td class="celda1"><input type="checkbox" name="" id="cuadro"></td>
+                        <td class="celda2">Ricardo Erazo</td>
+                        <td class="celda3"><img src="punto.png" class="punto"></td>
+                        <td class="celda4"><p class="ptitulo">Nueva Asignacion de Rutas</p><p class="psuptitulo">3 puntos de Rutas</p></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1"><input type="checkbox" name="" id=""></td>
+                        <td class="celda2">Esteban Daza</td>
+                        <td class="celda3"><img src="punto.png" class="punto"></td>
+                        <td class="celda4"><p class="ptitulo">Generar Informes</p><p class="psuptitulo">2 informes pendientes</p></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1"><input type="checkbox" name="" id=""></td>
+                        <td class="celda2">Jairo Castillo</td>
+                        <td class="celda3"><img src="punto.png" class="puntorojo"></td>
+                        <td class="celda4"><p class="ptitulo">Recoleccion B/Aida Lucia</p><p class="psuptitulo">Pendientes</p></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1"><input type="checkbox" name="" id=""></td>
+                        <td class="celda2">Juan Sanchez</td>
+                        <td class="celda3"><img src="punto.png" class="punto"></td>
+                        <td class="celda4"><p class="ptitulo">Registro de Usuario</p><p class="psuptitulo">Pendiente</p></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1"><input type="checkbox" name="" id=""></td>
+                        <td class="celda2">Daniel Solarte</td>
+                        <td class="celda3"><img src="punto.png" class="puntorojo"></td>
+                        <td class="celda4"><p class="ptitulo">Resgistro fotografico</p><p class="psuptitulo">Pendiente</p></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1"><input type="checkbox" name="" id=""></td>
+                        <td class="celda2">  Katerin Munos</td>
+                        <td class="celda3"><img src="punto.png" class="punto"></td>
+                        <td class="celda4"><p class="ptitulo">Contabilidad</p><p class="psuptitulo">Pendiete</p></td>
+                    </tr>
+                </table>
+            </article>
+
+            </article>
+            <section class="isq">
+            <section class="section1">
+                <img class="imgsection1" src="img/Sin título.png" alt="">  
             </section>
-            <section class="enc">   
-                <form>
-                    <button class="input" type="text"type="submit">puntos de ruta</button>
-                    <button class="input" type="text"type="submit">Rutas</button>
-                </form>
-            </section>
-            
-        <section class="filas">
-            <section class="primera">
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>
-                <h1 class="textoo">Aida Lucia</h1>
-            </section>    
-            <section class="segunda">
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>    
-                <h1 class="textoo">Barrio Bolivar</h1>
-            </section>
-            <section class="tercera">
-                <i class="fa-sharp fa-solid fa-map-location-dot"></i>    
-                <h1 class="textoo">La Esmeralda</h1>
-            </section>    
+
+                <article class="article3">
+                
+                    <table>
+                        <tr>
+                            <td class="td4"><i class="fa-solid fa-user"></i>Ricardo Erazo<p class="psuptitulo1">Empezando tarea</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td4"><p class="ptitulo">Titulo</p><p class="psuptitulo">Organizar los Residuos</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td4"><p class="ptitulo">Organizar los Residuos que se recolectaron
+                                en la semana</p><p class="psuptitulo"></p></td>
+                        </tr>
+
+                    </table>
+                    
+                </article>
         </section>
+
+
+        </main>
     </section>
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
