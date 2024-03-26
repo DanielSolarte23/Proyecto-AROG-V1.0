@@ -20,7 +20,6 @@ body{
     background-color: var(--color-principal);
     height: 7vh;
 }
-
 .nav{
     height: 15vh;
     background-color: var(--color-gris);
@@ -110,18 +109,18 @@ body{
 @media (max-width: 600px) {
     .header{
         width: 100%;
-        border: solid;
+    }
+    .nav .lista{
+        gap: 5px;
     }
     .nav .lista li a{
-        font-size: 15px;
-
-    }
+        font-size: 12px;
+    } 
     .nav{
         display: flex;
         justify-content: space-between;
         padding: 0;
         padding: 0 10px 0 10px;
-
     }
     .nav .nombre .nombres{
         border-left: -15px;
@@ -132,12 +131,23 @@ body{
     .nav .nombre .nombres h2{
         font-size: 15px;
         margin-top: 5px;
-
     }
     .nav img{
+        height: 80%;
+    }
+    
+    .main .titulo{
+        position: absolute;
+        font-size:20px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        bottom: 0%;
+    }
+    .main .imagen img{
         display: none;
     }
-    .main .titulo{
+    .main .imagen .color{
         display: none;
     }
   }

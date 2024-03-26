@@ -180,7 +180,7 @@ a:hover {
   background-color: var(--color-boton);
   color: var(--color-boton-texto);
   right: 15px;
-  top: 15px;
+  top: 35px;
   z-index: 100;
 }
 

@@ -180,7 +180,7 @@ a:hover {
   background-color: var(--color-boton);
   color: var(--color-boton-texto);
   right: 15px;
-  top: 15px;
+  top: 35px;
   z-index: 100;
 }
 
@@ -483,10 +483,9 @@ a:hover {
   .contenido_admi{
     display: flex;
     flex-direction: column;
-    border: solid red;
   }
   .contenido_admi .perfil{
-    margin-top: -60px;
+    margin-top: 20px;
   }
   .contenido_admi .perfil .bienvenido{
     font-size: 15px;
@@ -498,7 +497,30 @@ a:hover {
     font-size: 10px;
   }
   header .texto h1{
+    margin-top: 1px;
     font-size: 22px;
+  }
+  #contenido-principal{
+    border: 0;
+  }
+   #contenido-principal .contenido_admi .datos-perfil {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #contenido-principal .contenido_admi .datos-perfil .campo1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  #contenido-principal .contenido_admi .datos-perfil .campo2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -574,6 +596,9 @@ a:hover {
   font-size: 20px;
   background-color: var(--color-barra-lateral);
   transition: 0.5s;
+}
+.input:focus{
+  outline: none;
 }
 label{
   color: var(--color-texto-header);
