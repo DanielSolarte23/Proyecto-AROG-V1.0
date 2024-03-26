@@ -213,7 +213,7 @@ a:hover {
   transition: opacity 0.5s ease, width 0.5s ease;
 }
 
-/* .barra-lateral span.oculto {
+/* .mini-barra-lateral span.oculto {
   opacity: 0;
   width: 0;
 } */
@@ -299,8 +299,11 @@ a:hover {
   border-radius: 10px;
   color: var(--color-texto-menu);
   padding: 12px;
-}
 
+}
+.barra-lateral .navegacion .cre{
+  color: red;
+}
 .barra-lateral .navegacion a:hover {
   background-color: var(--color-menu-hover);
   color: var(--color-menu-hover-texto);
@@ -393,6 +396,7 @@ a:hover {
   width: 100%;
   display: flex;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .barra-lateral .usuario img {
@@ -434,6 +438,9 @@ a:hover {
   background-color: var(--color-menu-hover);
   color: var(--color-menu-hover-texto);
 }
+.Cerrar-sesion i{
+  color: #000000;
+}
 
 /* --------------------------->responsive */
 
@@ -447,6 +454,73 @@ a:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .barra-lateral {
+    position: fixed;
+    left: -250px;
+  }
+
+  .max-barra-lateral {
+    left: 0;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu ion-icon:nth-child(2) {
+    display: none;
+  }
+
+  section {
+    margin-left: 0;
+  }
+
+  section.min-section {
+    margin: 0;
+  }
+
+  .contenido_admi{
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+  }
+  .contenido_admi .perfil{
+    margin-top: -60px;
+  }
+  .contenido_admi .perfil .bienvenido{
+    font-size: 15px;
+  }
+  .header1{
+    width: 100%;
+  }
+  header .texto h3{
+    font-size: 10px;
+  }
+  header .texto h1{
+    font-size: 22px;
+  }
+  .main1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .isq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: solid;
+  }
+  .isq .section1 .imgsection1{
+    width: 100%;
+    border: solid red;
+    display: none;
+  }
+  .isq .article3{
+    display: none;
+  }
+}
 .main1{
     width: 100%;
     height: 99%;

@@ -288,7 +288,9 @@ a:hover {
   display: flex;
   margin-bottom: 15px;
 }
-
+.barra-lateral .navegacion .cre{
+  color: red;
+}
 .barra-lateral .navegacion a {
   width: 100%;
   margin-top: 20px;
@@ -445,6 +447,7 @@ a:hover {
   .barra-lateral .modo-oscuro {
     margin-bottom: 3px;
   }
+ 
 }
 
 @media (max-width: 600px) {
@@ -471,6 +474,20 @@ a:hover {
 
   section.min-section {
     margin: 0;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+  }
+  .main .botoness{
+    width: 99%;
+
+  }
+  .main .botoness button{
+    height: 90%;
+    width: 100%;
+    text-align: center;
   }
 }
 .main{

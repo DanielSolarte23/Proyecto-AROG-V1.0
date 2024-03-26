@@ -288,7 +288,9 @@ a:hover {
   display: flex;
   margin-bottom: 15px;
 }
-
+.barra-lateral .navegacion .cre{
+  color: red;
+}
 .barra-lateral .navegacion a {
   width: 100%;
   margin-top: 20px;

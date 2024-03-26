@@ -106,3 +106,14 @@ footer .tiene{
     margin-top: -15px;
     margin-bottom: 20px;
 }
+@media (max-width: 600px) {
+    .main .nombre{
+        display: none;
+    }
+    .main .inicio{
+        width: 100%;
+    }
+    .main .inicio .gmail{
+        width: 50%;
+    }
+  }

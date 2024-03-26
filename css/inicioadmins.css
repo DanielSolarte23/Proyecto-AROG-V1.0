@@ -301,7 +301,9 @@ a:hover {
   padding: 12px;
 
 }
-
+.barra-lateral .navegacion .cre{
+  color: red;
+}
 .barra-lateral .navegacion a:hover {
   background-color: var(--color-menu-hover);
   color: var(--color-menu-hover-texto);
@@ -436,6 +438,9 @@ a:hover {
   background-color: var(--color-menu-hover);
   color: var(--color-menu-hover-texto);
 }
+.Cerrar-sesion i{
+  color: #000000;
+}
 
 /* --------------------------->responsive */
 
@@ -474,7 +479,29 @@ a:hover {
   section.min-section {
     margin: 0;
   }
+
+  .contenido_admi{
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+  }
+  .contenido_admi .perfil{
+    margin-top: -60px;
+  }
+  .contenido_admi .perfil .bienvenido{
+    font-size: 15px;
+  }
+  .header1{
+    width: 100%;
+  }
+  header .texto h3{
+    font-size: 10px;
+  }
+  header .texto h1{
+    font-size: 22px;
+  }
 }
+
 
 /* contenido de la pagina  */
 
