@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Administrador</title>
+    <link rel="shortcut icon" href="img/logoArogNuevo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css-recolectores/inicioadmins.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+</head>
+<body>
+<div class="arriba">
+
+</div>
+<header class="header1">
+    <section class="imagen">
+        <img src="../img/logoArogNuevo.png" alt="">
+    </section>
+    <section class="texto">
+        <h3>Asociacion de <br>recicladores de oficio</h3>
+        <h1>GOLEROS</h1>
+    </section>
+    
+</header>
+<main>
+    <section class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </section>
+    <section class="barra-lateral" >
+        <article>
+            <section class="nombre-pagina">
+                <ion-icon id="cloud" name="menu-outline"></ion-icon>
+            </section>
+        </article>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="/html-recolectores/gestion-rutasR.html">
+                        <i class="fa-solid fa-route"></i>
+                        <span>Gestion de rutas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html-recolectores/tareas-R.html">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Lista de tareas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html-recolectores/registroIR.html">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Registro incidencias</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html-recolectores/pagosR.html">
+                        <i class="fa-solid fa-cash-register"></i>
+                        <span>Pagos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html-recolectores/estadisticas-R.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Estadisticas y metricas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Gestion de datos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html-recolectores/historiaR-R.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>Historial de registro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html-recolectores/informes-R.html">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <span>Informes y certificados</span>
+                    </a>
+                </li>
+                <li>
+                    <a  href="/html-recolectores/galeria-R.html">
+                        <i class="fa-solid fa-images"></i>
+                        <span>Registro fotografico</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="cre" href="../index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Cerrar sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article class="linea"></article>
+            <section class="modo-oscuro">
+                <article class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>modo oscuro</span>
+                </article>
+                <section class="switch">
+                    <article class="base">
+                        <article class="circulo">
+                        </article>
+                    </article>
+                </section>
+            </section>
+        <section class="usuario">
+            <a class="usuario" href="/html-recolectores/iniciorecolectores.html">
+                <img src="../img/fotos-de-perfil-aesthetic-920x1024.jpg" alt="">
+                <article class="info-usuario">
+                    <section class="nombre-email">
+                        <span class="nombre">Maria Anaya</span>
+                        <span class="email">MariaAnaya@gmail.com</span>
+                    </section>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </article>
+            </a>
+        </section>
+        <section class="Cerrar-sesion">
+
+        </section>
+        </section>
+    </section>
+    <!-- METER EL CONTENIDO DENTRO DE ESTE SECTION  -->
+    <section id="contenido-principal">
+        <main class="contenido_admi">
+            <section class="perfil">
+                <img  class="foto"  src="../img/perfil.png" alt="">
+                <h1 class="bienvenido">Bienvenido Maria Fernanda Anaya</h1>  
+            </section>
+            <section class="datos-perfil">
+                <section class="campo1">
+                    <article class="nombre">
+                        
+                        <label for="nombre">Nombre</label>
+                        <article class="icono-flex">
+                            <input id="nombre" class="input" type="text" placeholder="Maria"><i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                        <label for="apellido">Apellido</label>
+                        <article class="icono icono-flex">
+                            <input id="apellido" class="input" type="text" placeholder="Anaya"><i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                    </article>
+                </section>
+
+                <section class="campo2">
+                    <article class="telefono">
+
+                        <label for="telefono">Telefono</label>
+                        <article class="Icono icono-flex">
+                            <input id="telefono" class="input" type="text" placeholder="315566584">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                       
+                        <label for="direccion">Direccion</label>
+                        <article class="flex icono-flex">
+                            <input id="direccion" class="input"  type="text" placeholder="Calle 75 #24-25"><i class="fa-regular fa-pen-to-square"></i>
+                        </article>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </section>
+    <script src="../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</main>
+</body>
+</html>

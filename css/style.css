@@ -54,7 +54,6 @@ body{
     display: flex;
     gap: 20px;
     list-style: none;
-    font-size: 20px;
 }
 .nav .lista .linea{
     width: 1px;
@@ -64,7 +63,7 @@ body{
     text-decoration: none;
     color: black;    
     font-weight: 200;
-    font-size: 25px;
+    font-size: 20px;
 }
 .main{
     width: 100%;
